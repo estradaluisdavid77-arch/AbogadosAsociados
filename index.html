@@ -8,7 +8,7 @@
 <meta name="description" content="Abogados Asociados, despacho legal en Morelia. Divorcios, pensiones alimenticias, juicios civiles, mercantiles, administrativos, agrarios y penales, accidentes de tránsito, recursos y amparos. Primera asesoría gratuita. WhatsApp 443 895 6986.">
 <meta property="og:title" content="Abogados Asociados · Despacho Legal en Morelia">
 <meta property="og:description" content="Primera asesoría gratuita. WhatsApp 443 895 6986.">
-<meta property="og:image" content="media/oficina.jpg">
+<meta property="og:image" content="media/abogado.jpg">
 <meta name="theme-color" content="#F1ECE4">
 <link rel="icon" href="media/emblema-color.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -108,10 +108,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .scale-stage{position:relative;aspect-ratio:1/1.05;width:100%;max-width:560px;justify-self:center}
 .scale-stage canvas{position:relative;z-index:1;width:100%!important;height:100%!important;display:block}
 .scale-stage::before{content:"";position:absolute;left:22%;right:22%;bottom:9%;height:7%;border-radius:50%;background:radial-gradient(closest-side,rgba(23,19,15,.32),transparent);filter:blur(6px)}
+.scale-stage .disc{position:absolute;left:8%;right:8%;top:6%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 38%,#16346A 0%,#0B2347 45%,#061633 100%);box-shadow:0 40px 80px rgba(6,22,51,.28),inset 0 0 0 1px rgba(211,176,122,.5),inset 0 0 0 10px rgba(6,22,51,.6),inset 0 0 0 11px rgba(211,176,122,.35)}
+.scale-stage .disc::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 50% 30%,rgba(255,226,170,.28),transparent 55%)}
+.scale-stage .ring{position:absolute;left:8%;right:8%;top:6%;aspect-ratio:1;z-index:0;animation:spin 60s linear infinite}
+.scale-stage .ring text{font-family:var(--f-mono);font-size:3.1px;letter-spacing:.2em;fill:#D3B07A}
 .scale-stage .fallback{position:absolute;left:15%;top:28%;width:70%;height:auto;z-index:1}
-.scale-stage .seal{position:absolute;top:4%;right:2%;z-index:2;width:104px;height:104px;animation:spin 24s linear infinite}
-.scale-stage .seal text{font-family:var(--f-mono);font-size:9.6px;letter-spacing:.3em;fill:var(--ink-2)}
-@media (max-width:700px){.scale-stage{aspect-ratio:1/.86;max-width:420px}.scale-stage::before{bottom:13%}.scale-stage .seal{display:none}}
+@media (max-width:700px){.scale-stage{aspect-ratio:1/.94;max-width:420px}}
 .scale-tag{position:absolute;left:0;bottom:2%;z-index:2;font-family:var(--f-mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 
 @media (max-width:900px){
@@ -128,7 +130,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 @keyframes tick{to{transform:translateX(-50%)}}
 
 /* CINE */
-.cinema{position:relative;height:340vh}
+.cinema{position:relative;height:260vh}
 .cinema-sticky{position:sticky;top:0;height:100vh;height:100svh;display:grid;place-items:center;overflow:hidden}
 .cinema-frame{position:relative;width:var(--w,62%);height:var(--h,58%);border-radius:var(--r,32px);overflow:hidden;background:#000;box-shadow:0 40px 80px rgba(23,19,15,.25)}
 .cinema-frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s ease;transform:scale(var(--z,1.08))}
@@ -305,11 +307,10 @@ footer a{color:var(--brass-hi)}
   <div class="cinema-sticky">
     <div class="cinema-intro" id="cineIntro"><p class="eyebrow" style="justify-content:center">En acción</p><h2>Así trabajamos <em>todos los días.</em></h2></div>
     <div class="cinema-frame" id="cineFrame">
-      <video class="on" src="media/oficina.mp4" poster="media/oficina.jpg" muted loop playsinline preload="metadata" aria-label="Reunión con clientes en la oficina"></video>
-      <video src="media/equipo.mp4" poster="media/equipo.jpg" muted loop playsinline preload="metadata" aria-label="El equipo analizando expedientes"></video>
+      <video class="on" src="media/abogado.mp4" poster="media/abogado.jpg" muted loop playsinline preload="metadata" aria-label="Nuestro abogado atendiendo a clientes en la oficina"></video>
       <video src="media/juzgado.mp4" poster="media/juzgado.jpg" muted loop playsinline preload="metadata" aria-label="Acompañando a clientes"></video>
       <div class="cinema-shade"></div>
-      <div class="cinema-dots" id="cineDots" aria-hidden="true"><i><b></b></i><i><b></b></i><i><b></b></i></div>
+      <div class="cinema-dots" id="cineDots" aria-hidden="true"><i><b></b></i><i><b></b></i></div>
       <div class="cinema-cap">
         <div><span class="k" id="cineK">01 · En la oficina</span><h3 id="cineH">Te escuchamos <em>en persona.</em></h3></div>
         <p id="cineP">Cada asunto empieza con una conversación. Atendemos a cada cliente con tiempo y sin prisas.</p>
@@ -333,7 +334,8 @@ footer a{color:var(--brass-hi)}
     </div>
     <div class="scale-stage rise" id="stage" aria-hidden="true">
       <img class="fallback" id="fallback" src="media/emblema-color.png" alt="" width="451" height="326">
-      <svg class="seal" viewBox="0 0 120 120"><defs><path id="c" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#c">JUSTICIA · VERDAD · EQUIDAD · </textPath></text><text x="60" y="68" text-anchor="middle" style="font-family:Fraunces,Georgia,serif;font-size:26px;letter-spacing:0;fill:#A9814D">§</text></svg>
+      <div class="disc"></div>
+      <svg class="ring" viewBox="0 0 100 100"><defs><path id="ringPath" d="M50,50 m-44.5,0 a44.5,44.5 0 1,1 89,0 a44.5,44.5 0 1,1 -89,0"/></defs><text><textPath href="#ringPath" textLength="278" lengthAdjust="spacing">JUSTICIA · VERDAD · EQUIDAD · JUSTICIA · VERDAD · EQUIDAD · JUSTICIA · VERDAD · EQUIDAD · </textPath></text></svg>
     </div>
   </div>
 </section>
@@ -500,8 +502,7 @@ var vids = frame.querySelectorAll("video"), bars = frame.querySelectorAll(".cine
 var K = document.getElementById("cineK"), H = document.getElementById("cineH"), P = document.getElementById("cineP");
 var scenes = [
   ["01 · En la oficina", "Te escuchamos <em>en persona.</em>", "Cada asunto empieza con una conversación. Atendemos a cada cliente con tiempo y sin prisas."],
-  ["02 · Trabajo en equipo", "Estudiamos tu caso <em>a fondo.</em>", "Revisamos expedientes y documentos en equipo para definir la mejor estrategia."],
-  ["03 · Contigo en cada paso", "Te acompañamos <em>hasta el final.</em>", "Estamos a tu lado en trámites, juzgados y audiencias."]
+  ["02 · Contigo en cada paso", "Te acompañamos <em>hasta el final.</em>", "Estamos a tu lado en trámites, juzgados y audiencias."]
 ];
 var cur = -1, inView = false;
 function playV(v){ var pr = v.play(); if (pr && pr.catch) pr.catch(function(){}); }
@@ -522,9 +523,9 @@ function cineScroll(){
   frame.style.setProperty("--z", (1.12 - .12 * e).toFixed(3));
   intro.style.setProperty("--io", (1 - Math.min(1, grow * 1.8)).toFixed(2));
   dotsEl.style.setProperty("--do", Math.max(0, grow * 2 - 1).toFixed(2));
-  var rest = Math.max(0, (p - .22) / .78), idx = Math.min(2, Math.floor(rest * 3));
+  var rest = Math.max(0, (p - .22) / .78), idx = Math.min(1, Math.floor(rest * 2));
   setScene(idx);
-  bars.forEach(function(b, j){ var f = Math.max(0, Math.min(1, rest * 3 - j)); b.style.setProperty("--p", (f * 100) + "%"); });
+  bars.forEach(function(b, j){ var f = Math.max(0, Math.min(1, rest * 2 - j)); b.style.setProperty("--p", (f * 100) + "%"); });
 }
 window.addEventListener("scroll", cineScroll, { passive:true }); window.addEventListener("resize", cineScroll); cineScroll();
 if ("IntersectionObserver" in window) {
