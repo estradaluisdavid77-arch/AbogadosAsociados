@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abogados Asociados Morelia</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Abogados Asociados, despacho legal en Morelia. Divorcios, pensiones alimenticias, juicios civiles, mercantiles, administrativos, agrarios y penales, accidentes de tránsito, recursos y amparos. Primera asesoría gratuita. WhatsApp 443 895 6986.">
+<meta property="og:title" content="Abogados Asociados · Despacho Legal en Morelia">
+<meta property="og:description" content="Primera asesoría gratuita. WhatsApp 443 895 6986.">
+<meta property="og:image" content="media/oficina.jpg">
+<meta name="theme-color" content="#F1ECE4">
+<link rel="icon" href="media/emblema-color.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: papel hueso con tinta, vino tinto y latón. Columna editorial con un momento de cine al centro (los videos crecen hasta llenar la pantalla con el scroll) y una banda vino para las áreas. Un solo tema a propósito: como papel membretado de despacho. */
+:root{
+  --paper:#F1ECE4; --paper-2:#E9E2D6; --card:#FBF8F3; --ink:#17130F; --ink-2:#3A332C; --muted:#71675C;
+  --wine:#6E1A28; --wine-deep:#3D0E17; --brass:#A9814D; --brass-hi:#D3B07A; --line:rgba(23,19,15,.13); --line-w:rgba(241,236,228,.18);
+  --wa:#1FAF5A;
+  --f-display:"Fraunces", "Iowan Old Style", Georgia, serif;
+  --f-body:"Hanken Grotesk", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"DM Mono", ui-monospace, Menlo, monospace;
+  --gl:max(20px, env(safe-area-inset-left, 0px)); --gr:max(20px, env(safe-area-inset-right, 0px));
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+section[id]{scroll-margin-top:calc(74px + env(safe-area-inset-top,0px))}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--wine);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1200px;margin-inline:auto;padding-left:var(--gl);padding-right:var(--gr)}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--wine);display:flex;align-items:center;gap:10px;margin:0}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.02;margin:0;text-wrap:balance;letter-spacing:-.02em}
+h2{font-size:clamp(38px,5.6vw,72px)}
+h1 em,h2 em{font-style:italic;color:var(--wine)}
+p{margin:0}
+.lead{font-size:clamp(17px,1.5vw,20px);color:var(--ink-2);max-width:58ch}
+
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:transform .2s,background-color .2s,box-shadow .2s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 24px rgba(31,175,90,.28)}
+.btn-wa:hover{transform:translateY(-2px)}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--paper);z-index:60}
+.nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;transition:background-color .3s,box-shadow .3s}
+.nav.solid,.nav.menu-open{background:rgba(241,236,228,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:48px;height:auto}
+.brand b{font-family:var(--f-display);font-weight:600;font-size:19px;letter-spacing:.02em;display:block;line-height:1.1;color:#062A5D}
+.brand small{display:block;font-size:10px;letter-spacing:.3em;color:var(--brass);font-weight:700}
+.menu{display:flex;align-items:center;gap:28px}
+.menu a{text-decoration:none;font-size:15px;color:var(--ink-2)}
+.menu a:not(.btn):hover{color:var(--wine)}
+.menu .btn{min-height:44px;padding:0 18px;font-size:14px;color:#fff}
+.nav-fb{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);color:#1458C4}
+.nav-fb svg{width:20px;height:20px}
+.burger{display:none;width:46px;height:46px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+@media (max-width:520px){.brand img{width:40px}.brand b{font-size:15px}.brand small{font-size:9px;letter-spacing:.22em}}
+@media (max-width:900px){
+  .burger{display:grid;place-items:center}
+  .menu{position:fixed;inset:calc(74px + env(safe-area-inset-top,0px)) 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);padding:8px var(--gr) 24px var(--gl);box-shadow:0 20px 30px rgba(23,19,15,.12);display:none}
+  .menu.open{display:flex}
+  .menu a{padding:14px 0;border-bottom:1px solid var(--line);font-size:17px}
+  .nav-fb{width:auto;height:auto;border:0;border-radius:0;display:flex;justify-content:flex-start;gap:10px}
+  .nav-fb::after{content:"Facebook";color:var(--ink-2)}
+  .menu .btn{margin-top:16px;justify-content:center;min-height:52px;border-bottom:0}
+}
+
+.hero{position:relative;padding-top:calc(110px + env(safe-area-inset-top,0px));padding-bottom:40px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center}
+.hero-copy{display:flex;flex-direction:column;gap:26px;min-width:0;position:relative;z-index:2}
+.hero h1{font-size:clamp(50px,8vw,112px)}
+.hero h1 .line{display:block}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:13px;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink-2)}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* diseños del despacho en carrusel 3D */
+.deck{position:relative;width:100%;max-width:580px;justify-self:end;display:flex;flex-direction:column;gap:18px;min-width:0}
+.deck-stage{position:relative;aspect-ratio:1/.92;perspective:1600px;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.deck-card{position:absolute;left:50%;top:50%;width:84%;margin:0;border-radius:18px;overflow:hidden;background:var(--card);border:6px solid var(--card);box-shadow:0 30px 60px rgba(23,19,15,.28),0 4px 10px rgba(23,19,15,.12);transform-style:preserve-3d;transition:transform .9s cubic-bezier(.2,.8,.2,1),opacity .9s,filter .9s;cursor:pointer;will-change:transform}
+.deck-card img{width:100%;height:auto;display:block;pointer-events:none;-webkit-user-drag:none}
+.deck-card::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.35) 0%,transparent 35%,transparent 65%,rgba(255,255,255,.12) 100%);opacity:var(--shine,0);transition:opacity .4s;pointer-events:none}
+.deck-card.front{cursor:grab}
+.deck-ui{display:flex;align-items:center;justify-content:space-between;gap:4px 12px;flex-wrap:wrap}
+.deck-nav{display:flex;align-items:center;gap:8px}
+.deck-nav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;display:grid;place-items:center}
+.deck-nav button:hover{border-color:var(--ink)}
+.deck-dots{display:flex;gap:6px;margin-inline:6px}
+.deck-dots i{width:8px;height:8px;border-radius:8px;background:var(--line);transition:width .4s,background-color .4s}
+.deck-dots i.on{width:26px;background:var(--wine)}
+.fb-link{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;color:#1458C4;text-decoration:none;min-height:44px}
+.fb-link svg{width:20px;height:20px}
+.fb-link:hover{text-decoration:underline}
+
+/* balanza 3D */
+.scale-stage{position:relative;aspect-ratio:1/1.05;width:100%;max-width:560px;justify-self:center}
+.scale-stage canvas{position:relative;z-index:1;width:100%!important;height:100%!important;display:block}
+.scale-stage::before{content:"";position:absolute;left:22%;right:22%;bottom:9%;height:7%;border-radius:50%;background:radial-gradient(closest-side,rgba(23,19,15,.32),transparent);filter:blur(6px)}
+.scale-stage .fallback{position:absolute;left:15%;top:28%;width:70%;height:auto;z-index:1}
+.scale-stage .seal{position:absolute;top:4%;right:2%;z-index:2;width:104px;height:104px;animation:spin 24s linear infinite}
+.scale-stage .seal text{font-family:var(--f-mono);font-size:9.6px;letter-spacing:.3em;fill:var(--ink-2)}
+@media (max-width:700px){.scale-stage{aspect-ratio:1/.86;max-width:420px}.scale-stage::before{bottom:13%}.scale-stage .seal{display:none}}
+.scale-tag{position:absolute;left:0;bottom:2%;z-index:2;font-family:var(--f-mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+@media (max-width:900px){
+  .hero{padding-top:calc(96px + env(safe-area-inset-top,0px))}
+  .hero .wrap{grid-template-columns:1fr}
+  .deck{max-width:460px;justify-self:center;width:100%;order:-1;margin-bottom:8px}
+}
+
+.ticker{overflow:hidden;padding-block:20px;border-block:1px solid var(--line)}
+.ticker-track{display:flex;gap:40px;width:max-content;animation:tick 46s linear infinite}
+.ticker span{font-family:var(--f-display);font-size:30px;white-space:nowrap;color:var(--ink)}
+.ticker span:nth-child(even){font-style:italic;color:var(--wine)}
+.ticker span::after{content:"§";font-style:normal;font-size:18px;color:var(--brass);margin-left:40px;vertical-align:middle}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* CINE */
+.cinema{position:relative;height:340vh}
+.cinema-sticky{position:sticky;top:0;height:100vh;height:100svh;display:grid;place-items:center;overflow:hidden}
+.cinema-frame{position:relative;width:var(--w,62%);height:var(--h,58%);border-radius:var(--r,32px);overflow:hidden;background:#000;box-shadow:0 40px 80px rgba(23,19,15,.25)}
+.cinema-frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s ease;transform:scale(var(--z,1.08))}
+.cinema-frame video.on{opacity:1}
+.cinema-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,19,15,.3) 0%,transparent 28%,transparent 48%,rgba(23,19,15,.78) 100%);pointer-events:none}
+.cinema-cap{position:absolute;left:0;right:0;bottom:0;padding:0 max(28px,var(--gr)) calc(34px + env(safe-area-inset-bottom,0px)) max(28px,var(--gl));color:#F7F2EA;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.cinema-cap .k{font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-hi)}
+.cinema-cap h3{font-size:clamp(32px,5vw,68px);margin-top:8px;max-width:14ch}
+.cinema-cap h3 em{font-style:italic;color:var(--brass-hi)}
+.cinema-cap p{max-width:36ch;color:#E6DED2;font-size:16px}
+.cinema-dots{position:absolute;top:calc(90px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);display:flex;gap:8px;opacity:var(--do,0)}
+.cinema-dots i{width:54px;height:3px;border-radius:3px;background:rgba(255,255,255,.3);overflow:hidden;position:relative}
+.cinema-dots i b{position:absolute;inset:0;width:var(--p,0%);background:#fff}
+.cinema-intro{position:absolute;top:calc(84px + env(safe-area-inset-top,0px));left:0;right:0;text-align:center;opacity:var(--io,1);pointer-events:none;padding-inline:var(--gl)}
+.cinema-intro h2{font-size:clamp(30px,4.4vw,56px)}
+@media (max-width:700px){.cinema-cap p{display:none}.cinema-dots i{width:36px}}
+
+.band{padding-block:clamp(84px,11vw,150px)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:center}
+.split>*{min-width:0}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+.about{display:flex;flex-direction:column;gap:22px}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:6px}
+.values div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.values b{display:block;font-family:var(--f-display);font-size:28px;font-style:italic;font-weight:400;color:var(--wine)}
+.values span{font-size:13px;color:var(--muted)}
+
+.areas{background:radial-gradient(80% 60% at 80% 0%,#8A2335,transparent 60%),linear-gradient(180deg,var(--wine) 0%,var(--wine-deep) 100%);color:#F4EDE2}
+.areas .eyebrow{color:var(--brass-hi)}
+.areas h2 em{color:var(--brass-hi)}
+.areas-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:52px}
+.areas-head p{max-width:40ch;color:#E2D2C6}
+.grid-areas{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;perspective:1200px}
+@media (min-width:1100px){.grid-areas{grid-template-columns:repeat(5,1fr)}}
+.area{position:relative;padding:26px 22px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid var(--line-w);transform-style:preserve-3d;transition:transform .2s ease-out,background-color .3s;min-height:230px;display:flex;flex-direction:column;gap:12px;overflow:hidden}
+.area::before{content:"";position:absolute;inset:0;background:radial-gradient(220px circle at var(--mx,50%) var(--my,0%),rgba(211,176,122,.28),transparent 60%);opacity:0;transition:opacity .3s}
+.area:hover{background:rgba(255,255,255,.1)}
+.area:hover::before{opacity:1}
+.area .num{font-family:var(--f-mono);font-size:12px;color:var(--brass-hi);letter-spacing:.12em}
+.area h3{font-size:26px}
+.area p{font-size:15px;color:#E2D2C6}
+.area.free{background:var(--paper);color:var(--ink);border-color:transparent}
+.area.free p{color:var(--ink-2)}
+.area.free .num{color:var(--wine)}
+.area .ico{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(211,176,122,.16);color:var(--brass-hi)}
+.area.free .ico{background:var(--wine);color:var(--paper)}
+.area .ico svg{width:22px;height:22px}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden}
+.step .n{font-family:var(--f-display);font-style:italic;font-size:76px;line-height:.8;color:var(--paper-2);position:absolute;right:16px;top:14px}
+.step h3{font-size:28px;position:relative}
+.step p{color:var(--muted);font-size:15px;position:relative}
+.step .bar{height:3px;width:44px;background:var(--wine);border-radius:3px}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:44px}
+.why div{border-top:2px solid var(--ink);padding-top:18px;display:flex;flex-direction:column;gap:8px}
+.why h3{font-size:25px}
+.why p{color:var(--muted);font-size:15px}
+@media (max-width:900px){.why{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.why{grid-template-columns:1fr}}
+
+.quote{background:var(--ink);color:var(--paper);text-align:center;padding-block:clamp(90px,11vw,150px);overflow:hidden;position:relative}
+.quote::before{content:"§";position:absolute;font-family:var(--f-display);font-size:min(60vw,640px);line-height:1;color:rgba(241,236,228,.04);left:50%;top:50%;transform:translate(-50%,-55%)}
+.quote blockquote{margin:0 auto;max-width:18ch;font-family:var(--f-display);font-size:clamp(36px,5.6vw,72px);line-height:1.06;text-wrap:balance;position:relative}
+.quote blockquote em{color:var(--brass-hi)}
+.quote cite{display:block;margin-top:24px;font-style:normal;font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;color:var(--brass-hi);text-transform:uppercase}
+
+.contact{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;margin-top:48px}
+.contact>*{min-width:0}
+.cbox{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;gap:22px}
+.bigphone{display:flex;flex-direction:column;gap:6px}
+.bigphone small{font-family:var(--f-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.bigphone a{font-family:var(--f-display);font-size:clamp(40px,5vw,60px);text-decoration:none;letter-spacing:-.01em;line-height:1;font-variant-numeric:tabular-nums}
+.bigphone a:hover{color:var(--wine)}
+.addr{display:flex;gap:14px;align-items:flex-start;padding-top:20px;border-top:1px solid var(--line)}
+.addr svg{width:22px;height:22px;color:var(--wine);flex:none;margin-top:3px}
+.addr b{display:block;font-size:18px}
+.addr span{color:var(--muted);font-size:15px}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.links .btn{min-height:48px;font-size:15px}
+form{display:flex;flex-direction:column;gap:14px}
+label{font-size:14px;font-weight:600;display:flex;flex-direction:column;gap:6px;color:var(--ink-2)}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-height:50px;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--wine)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.note{font-size:13px;color:var(--muted)}
+@media (max-width:900px){.contact{grid-template-columns:1fr}}
+@media (max-width:520px){.row2,.values{grid-template-columns:1fr}}
+
+footer{background:var(--ink);color:#B9AFA3;padding-block:48px calc(40px + env(safe-area-inset-bottom,0px));font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+footer img{width:200px;height:auto}
+footer a{color:var(--brass-hi)}
+
+.fab-fb{position:fixed;right:calc(26px + env(safe-area-inset-right,0px));bottom:calc(92px + env(safe-area-inset-bottom,0px));z-index:40;width:44px;height:44px;border-radius:50%;background:#1877F2;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px rgba(23,19,15,.25)}
+.fab-fb svg{width:22px;height:22px}
+.fab{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 30px rgba(23,19,15,.3);text-decoration:none}
+.fab svg{width:30px;height:30px;color:#fff}
+.fab::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--wa);opacity:.5;animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{from{transform:scale(.9);opacity:.6}to{transform:scale(1.35);opacity:0}}
+
+.rise{transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.js .rise.below{transform:translateY(36px)}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rise.below{transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Abogados Asociados, inicio">
+      <img src="media/emblema-color.png" alt="" width="451" height="326">
+      <span><b>ABOGADOS ASOCIADOS</b><small>DESPACHO LEGAL</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#cine">En acción</a>
+      <a href="#despacho">El despacho</a>
+      <a href="#areas">Áreas</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#contacto">Contacto</a>
+      <a class="nav-fb" href="https://www.facebook.com/profile.php?id=61563538330312" target="_blank" rel="noopener" aria-label="Facebook de Abogados Asociados"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2h2.8V22h3.4Z"/></svg></a>
+      <a class="btn btn-wa wa-link" href="https://wa.me/524438956986" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Despacho legal · Morelia</p>
+      <h1><span class="line">Defendemos</span><span class="line">lo que más</span><span class="line">te <em>importa.</em></span></h1>
+      <p class="lead">Abogados en Morelia para asuntos familiares, civiles, mercantiles, administrativos, agrarios y penales. Te escuchamos, te explicamos tus opciones con claridad y te acompañamos hasta el final.</p>
+      <div class="ctas">
+        <a class="btn btn-wa wa-link" href="https://wa.me/524438956986" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.1c-.2.7-1.4 1.300-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.2-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.600 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.5Z"/></svg>
+          Asesoría gratuita · 443 895 6986</a>
+        <a class="btn btn-line" href="#areas">Áreas de práctica</a>
+      </div>
+      <div class="chips"><span>Primera asesoría sin costo</span><span>Trato directo con tu abogado</span><span>Frac. La Huerta, Morelia</span></div>
+    </div>
+    <div class="deck" id="deck" aria-roledescription="carrusel" aria-label="Nuestros diseños">
+      <div class="deck-stage" id="deckStage">
+        <figure class="deck-card"><img src="media/diseno-servicios-legales.jpg" alt="Diseño: Servicios legales de Abogados Asociados" width="1200" height="827"></figure>
+        <figure class="deck-card"><img src="media/diseno-nuestros-servicios.jpg" alt="Diseño: Nuestros servicios" width="1200" height="1006" loading="lazy"></figure>
+        <figure class="deck-card"><img src="media/diseno-te-ayudamos.jpg" alt="Diseño: ¿Tienes problemas legales? Nosotros te ayudamos" width="1200" height="1180" loading="lazy"></figure>
+      </div>
+      <div class="deck-ui">
+        <div class="deck-nav"><button type="button" id="deckPrev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button><div class="deck-dots" id="deckDots"><i></i><i></i><i></i></div><button type="button" id="deckNext" aria-label="Siguiente"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button></div>
+        <a class="fb-link" href="https://www.facebook.com/profile.php?id=61563538330312" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2h2.8V22h3.4Z"/></svg>Ver más en Facebook</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Divorcios</span><span>Pensiones alimenticias</span><span>Juicios civiles</span><span>Mercantil</span><span>Administrativo</span><span>Agrario</span><span>Penal</span><span>Accidentes de tránsito</span><span>Recursos y amparos</span><span>Asesoría gratuita</span>
+    <span>Divorcios</span><span>Pensiones alimenticias</span><span>Juicios civiles</span><span>Mercantil</span><span>Administrativo</span><span>Agrario</span><span>Penal</span><span>Accidentes de tránsito</span><span>Recursos y amparos</span><span>Asesoría gratuita</span>
+  </div>
+</div>
+
+<section class="cinema" id="cine" aria-label="Nuestro despacho en acción">
+  <div class="cinema-sticky">
+    <div class="cinema-intro" id="cineIntro"><p class="eyebrow" style="justify-content:center">En acción</p><h2>Así trabajamos <em>todos los días.</em></h2></div>
+    <div class="cinema-frame" id="cineFrame">
+      <video class="on" src="media/oficina.mp4" poster="media/oficina.jpg" muted loop playsinline preload="metadata" aria-label="Reunión con clientes en la oficina"></video>
+      <video src="media/equipo.mp4" poster="media/equipo.jpg" muted loop playsinline preload="metadata" aria-label="El equipo analizando expedientes"></video>
+      <video src="media/juzgado.mp4" poster="media/juzgado.jpg" muted loop playsinline preload="metadata" aria-label="Acompañando a clientes"></video>
+      <div class="cinema-shade"></div>
+      <div class="cinema-dots" id="cineDots" aria-hidden="true"><i><b></b></i><i><b></b></i><i><b></b></i></div>
+      <div class="cinema-cap">
+        <div><span class="k" id="cineK">01 · En la oficina</span><h3 id="cineH">Te escuchamos <em>en persona.</em></h3></div>
+        <p id="cineP">Cada asunto empieza con una conversación. Atendemos a cada cliente con tiempo y sin prisas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="despacho">
+  <div class="wrap split">
+    <div class="about rise">
+      <p class="eyebrow">El despacho</p>
+      <h2>Un equipo que estudia tu asunto <em>a fondo.</em></h2>
+      <p class="lead">Somos un despacho comprometido con ofrecer servicios jurídicos de alta calidad en diversas áreas del derecho. Cada caso se revisa en equipo: analizamos tus documentos, definimos la estrategia y te explicamos cada paso en palabras claras.</p>
+      <p class="lead">Atendemos en nuestra oficina de Morelia y te acompañamos a juzgados y audiencias, para que nunca enfrentes un trámite legal solo.</p>
+      <div class="values">
+        <div><b>Justicia</b><span>Defendemos tus derechos con firmeza.</span></div>
+        <div><b>Verdad</b><span>Te decimos lo que sí es posible.</span></div>
+        <div><b>Equidad</b><span>Trato digno para cada cliente.</span></div>
+      </div>
+    </div>
+    <div class="scale-stage rise" id="stage" aria-hidden="true">
+      <img class="fallback" id="fallback" src="media/emblema-color.png" alt="" width="451" height="326">
+      <svg class="seal" viewBox="0 0 120 120"><defs><path id="c" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#c">JUSTICIA · VERDAD · EQUIDAD · </textPath></text><text x="60" y="68" text-anchor="middle" style="font-family:Fraunces,Georgia,serif;font-size:26px;letter-spacing:0;fill:#A9814D">§</text></svg>
+    </div>
+  </div>
+</section>
+
+<section class="band areas" id="areas">
+  <div class="wrap">
+    <div class="areas-head rise">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <p class="eyebrow">Áreas de práctica</p>
+        <h2>Un solo despacho para <em>cada etapa</em> de tu caso.</h2>
+      </div>
+      <p>Llevamos asuntos en distintas materias, así que no tienes que buscar un abogado nuevo cada vez que tu caso cambia.</p>
+    </div>
+    <div class="grid-areas">
+      <article class="area rise"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 4a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm10 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6ZM3 20c0-3 2-5 4-5s4 2 4 5M13 20c0-3 2-5 4-5s4 2 4 5"/></svg></span><span class="num">01</span><h3>Divorcios</h3><p>Divorcio voluntario o contencioso, convenios, guarda y custodia y convivencia.</p></article>
+      <article class="area rise"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z"/></svg></span><span class="num">02</span><h3>Pensiones alimenticias</h3><p>Solicitud, aumento, reducción o cumplimiento de la pensión para tus hijos.</p></article>
+      <article class="area rise"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l8-6 8 6v12M9 21v-6h6v6"/></svg></span><span class="num">03</span><h3>Juicios civiles</h3><p>Contratos, arrendamientos, cobro de adeudos, sucesiones y propiedad.</p></article>
+      <article class="area rise"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg></span><span class="num">04</span><h3>Mercantil</h3><p>Pagarés, cobranza judicial y conflictos entre comerciantes y empresas.</p></article>
+      <article class="area rise"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10h18L12 4 3 10ZM5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/></svg></span><span class="num">05</span><h3>Administrativo</h3><p>Defensa ante actos, multas y resoluciones de autoridades.</p></article>
+      <article class="area rise"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 20h18M6 20c0-5 2-9 6-12M12 8c3 2 5 6 6 12M12 8V3"/></svg></span><span class="num">06</span><h3>Agrario</h3><p>Ejidos, parcelas, sucesiones agrarias y posesión de tierras.</p></article>
+      <article class="area rise"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/></svg></span><span class="num">07</span><h3>Penal</h3><p>Defensa y asesoría a víctimas e imputados en cada etapa del proceso.</p></article>
+      <article class="area rise"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 16l1.5-5A2 2 0 0 1 8.4 9.6h7.2a2 2 0 0 1 1.9 1.4L19 16M4 16h16v3H4zM7 19v2M17 19v2"/></svg></span><span class="num">08</span><h3>Accidentes de tránsito</h3><p>Reclamación de daños, trato con aseguradoras y defensa.</p></article>
+      <article class="area rise"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6ZM14 3v6h6M8 14l2.5 2.5L16 11"/></svg></span><span class="num">09</span><h3>Recursos y amparos</h3><p>Impugnamos resoluciones y protegemos tus derechos ante la autoridad.</p></article>
+      <article class="area free rise"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg></span><span class="num">SIN COSTO</span><h3>Asesoría jurídica gratuita</h3><p>Te orientamos sin costo para que conozcas tus opciones antes de decidir.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="proceso">
+  <div class="wrap">
+    <div class="rise" style="display:flex;flex-direction:column;gap:14px;max-width:760px">
+      <p class="eyebrow">Cómo trabajamos</p>
+      <h2>De tu primera duda a la <em>resolución.</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step rise"><span class="n">1</span><span class="bar"></span><h3>Te escuchamos</h3><p>Asesoría gratuita en la oficina o por WhatsApp. Nos cuentas tu caso con calma.</p></div>
+      <div class="step rise"><span class="n">2</span><span class="bar"></span><h3>Analizamos</h3><p>Revisamos documentos y plazos, y te decimos con honestidad qué opciones tienes.</p></div>
+      <div class="step rise"><span class="n">3</span><span class="bar"></span><h3>Actuamos</h3><p>Preparamos y presentamos tu asunto, y te acompañamos a juzgados y audiencias.</p></div>
+      <div class="step rise"><span class="n">4</span><span class="bar"></span><h3>Te informamos</h3><p>Sabes en qué va tu caso en cada etapa, sin tecnicismos.</p></div>
+    </div>
+    <div class="why">
+      <div class="rise"><h3>Primera asesoría gratis</h3><p>Conoce tus opciones antes de comprometerte a nada.</p></div>
+      <div class="rise"><h3>Trato directo</h3><p>Hablas con los abogados que llevan tu asunto.</p></div>
+      <div class="rise"><h3>Varias materias</h3><p>Familiar, civil, mercantil, administrativo, agrario y penal en un solo lugar.</p></div>
+      <div class="rise"><h3>En Morelia</h3><p>Oficina en Frac. La Huerta y atención por WhatsApp.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="wrap rise">
+    <blockquote>Por el compromiso con la justicia, <em>la verdad y la equidad.</em></blockquote>
+    <cite>Abogados Asociados · Despacho Legal</cite>
+  </div>
+</section>
+
+<section class="band" id="contacto">
+  <div class="wrap">
+    <div class="rise" style="display:flex;flex-direction:column;gap:14px;max-width:760px">
+      <p class="eyebrow">Contacto</p>
+      <h2>¿Tienes un problema legal? <em>Te ayudamos.</em></h2>
+      <p class="lead">Escríbenos por WhatsApp, llámanos o visítanos. Tu primera asesoría no tiene costo.</p>
+    </div>
+    <div class="contact">
+      <div class="cbox rise">
+        <div class="bigphone"><small>Llamadas y WhatsApp</small><a href="tel:+524438956986">443 895 6986</a></div>
+        <div class="links">
+          <a class="btn btn-wa wa-link" href="https://wa.me/524438956986" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.2-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.5Z"/></svg>Escribir por WhatsApp</a>
+          <a class="btn btn-line" href="tel:+524438956986">Llamar</a>
+        </div>
+        <div class="addr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <div><b>Durazno 95, Frac. La Huerta</b><span>C.P. 58080, Morelia, Michoacán</span></div>
+        </div>
+        <div class="links">
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Durazno+95%2C+La+Huerta%2C+58080+Morelia%2C+Mich." target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-line" href="https://www.facebook.com/profile.php?id=61563538330312" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <form class="cbox rise" id="waForm" novalidate>
+        <div class="row2">
+          <label for="fNombre">Nombre<input id="fNombre" name="nombre" autocomplete="name" placeholder="Tu nombre"></label>
+          <label for="fArea">Tema<select id="fArea" name="area">
+            <option>Asesoría general</option><option>Divorcio</option><option>Pensión alimenticia</option><option>Juicio civil</option><option>Mercantil</option><option>Administrativo</option><option>Agrario</option><option>Penal</option><option>Accidente de tránsito</option><option>Recurso o amparo</option>
+          </select></label>
+        </div>
+        <label for="fMsg">Cuéntanos brevemente tu caso<textarea id="fMsg" name="mensaje" placeholder="Ej. Quiero información sobre un divorcio voluntario."></textarea></label>
+        <a class="btn btn-wa" id="waSend" href="https://wa.me/524438956986" target="_blank" rel="noopener" style="justify-content:center">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.2-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.5Z"/></svg>
+          Enviar por WhatsApp</a>
+        <p class="note">Se abrirá WhatsApp con tu mensaje listo. La información que nos compartas es confidencial.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="media/logo-claro.png" alt="Abogados Asociados, Despacho Legal" width="982" height="526">
+    <div style="display:flex;flex-direction:column;gap:6px;max-width:520px">
+      <span>© 2026 Abogados Asociados · Despacho Legal · Morelia, Michoacán</span>
+      <span>Durazno 95, Frac. La Huerta, C.P. 58080 · WhatsApp <a href="https://wa.me/524438956986" class="wa-link" target="_blank" rel="noopener">443 895 6986</a></span>
+      <span><a href="https://www.facebook.com/profile.php?id=61563538330312" target="_blank" rel="noopener">Síguenos en Facebook</a></span>
+      <span style="font-size:12px">La información de este sitio es general y no sustituye una asesoría legal personalizada.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab-fb" href="https://www.facebook.com/profile.php?id=61563538330312" target="_blank" rel="noopener" aria-label="Síguenos en Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2h2.8V22h3.4Z"/></svg></a>
+<a class="fab wa-link" href="https://wa.me/524438956986" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.2-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.5Z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+"use strict";
+var WA = "524438956986";
+var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+document.documentElement.classList.add("js");
+
+var waDefault = "https://wa.me/" + WA + "?text=" + encodeURIComponent("Hola, quiero una asesoría gratuita con Abogados Asociados.");
+document.querySelectorAll(".wa-link").forEach(function(a){ a.href = waDefault; });
+
+var nav = document.getElementById("nav"), burger = document.getElementById("burger"), menu = document.getElementById("menu");
+function onScroll(){ nav.classList.toggle("solid", window.scrollY > 30); }
+window.addEventListener("scroll", onScroll, { passive:true }); onScroll();
+burger.addEventListener("click", function(){ var o = menu.classList.toggle("open"); nav.classList.toggle("menu-open", o); burger.setAttribute("aria-expanded", String(o)); });
+document.querySelectorAll('a[href^="#"]').forEach(function(a){ a.addEventListener("click", function(ev){ var t = document.querySelector(a.getAttribute("href")); if (t) { ev.preventDefault(); t.scrollIntoView({ behavior: reduce ? "auto" : "smooth" }); } }); });
+menu.addEventListener("click", function(e){ if (e.target.closest("a")) { menu.classList.remove("open"); nav.classList.remove("menu-open"); burger.setAttribute("aria-expanded","false"); } });
+
+var fN = document.getElementById("fNombre"), fA = document.getElementById("fArea"), fM = document.getElementById("fMsg"), send = document.getElementById("waSend");
+function updateWa(){
+  var t = "Hola, soy " + (fN.value.trim() || "[tu nombre]") + ". Me interesa: " + fA.value + ".";
+  if (fM.value.trim()) t += "\n" + fM.value.trim();
+  send.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(t);
+}
+[fN, fA, fM].forEach(function(el){ el.addEventListener("input", updateWa); el.addEventListener("change", updateWa); });
+document.getElementById("waForm").addEventListener("submit", function(e){ e.preventDefault(); });
+updateWa();
+
+if ("IntersectionObserver" in window && !reduce) {
+  var els = document.querySelectorAll(".rise");
+  els.forEach(function(el){ if (el.getBoundingClientRect().top > window.innerHeight) el.classList.add("below"); });
+  var io = new IntersectionObserver(function(entries){ entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.remove("below"); io.unobserve(en.target); } }); }, { rootMargin:"0px 0px -8% 0px" });
+  els.forEach(function(el){ io.observe(el); });
+}
+
+if (window.matchMedia && matchMedia("(pointer:fine)").matches && !reduce) {
+  document.querySelectorAll(".area").forEach(function(card){
+    card.addEventListener("pointermove", function(e){
+      var r = card.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+      card.style.transform = "rotateX(" + ((.5 - y) * 14).toFixed(2) + "deg) rotateY(" + ((x - .5) * 16).toFixed(2) + "deg) translateZ(6px)";
+      card.style.setProperty("--mx", (x * 100) + "%"); card.style.setProperty("--my", (y * 100) + "%");
+    });
+    card.addEventListener("pointerleave", function(){ card.style.transform = ""; });
+  });
+}
+
+/* CINE */
+var cine = document.getElementById("cine"), frame = document.getElementById("cineFrame"), intro = document.getElementById("cineIntro"), dotsEl = document.getElementById("cineDots");
+var vids = frame.querySelectorAll("video"), bars = frame.querySelectorAll(".cinema-dots b");
+var K = document.getElementById("cineK"), H = document.getElementById("cineH"), P = document.getElementById("cineP");
+var scenes = [
+  ["01 · En la oficina", "Te escuchamos <em>en persona.</em>", "Cada asunto empieza con una conversación. Atendemos a cada cliente con tiempo y sin prisas."],
+  ["02 · Trabajo en equipo", "Estudiamos tu caso <em>a fondo.</em>", "Revisamos expedientes y documentos en equipo para definir la mejor estrategia."],
+  ["03 · Contigo en cada paso", "Te acompañamos <em>hasta el final.</em>", "Estamos a tu lado en trámites, juzgados y audiencias."]
+];
+var cur = -1, inView = false;
+function playV(v){ var pr = v.play(); if (pr && pr.catch) pr.catch(function(){}); }
+function setScene(i){
+  if (i === cur) return; cur = i;
+  vids.forEach(function(v, j){ v.classList.toggle("on", j === i); if (j === i) { if (inView) playV(v); } else v.pause(); });
+  K.textContent = scenes[i][0]; H.innerHTML = scenes[i][1]; P.textContent = scenes[i][2];
+}
+function cineScroll(){
+  var r = cine.getBoundingClientRect(), total = r.height - window.innerHeight;
+  var p = Math.max(0, Math.min(1, -r.top / total));
+  var grow = Math.min(1, p / .22), e = 1 - Math.pow(1 - grow, 3);
+  var small = window.innerWidth < 700;
+  var w0 = small ? 88 : 62, h0 = small ? 50 : 56;
+  frame.style.setProperty("--w", (w0 + (100 - w0) * e) + "%");
+  frame.style.setProperty("--h", (h0 + (100 - h0) * e) + "%");
+  frame.style.setProperty("--r", (32 * (1 - e)) + "px");
+  frame.style.setProperty("--z", (1.12 - .12 * e).toFixed(3));
+  intro.style.setProperty("--io", (1 - Math.min(1, grow * 1.8)).toFixed(2));
+  dotsEl.style.setProperty("--do", Math.max(0, grow * 2 - 1).toFixed(2));
+  var rest = Math.max(0, (p - .22) / .78), idx = Math.min(2, Math.floor(rest * 3));
+  setScene(idx);
+  bars.forEach(function(b, j){ var f = Math.max(0, Math.min(1, rest * 3 - j)); b.style.setProperty("--p", (f * 100) + "%"); });
+}
+window.addEventListener("scroll", cineScroll, { passive:true }); window.addEventListener("resize", cineScroll); cineScroll();
+if ("IntersectionObserver" in window) {
+  new IntersectionObserver(function(en){ inView = en[0].isIntersecting; var v = vids[cur]; if (!v) return; if (inView) playV(v); else v.pause(); }, { threshold:.05 }).observe(cine);
+} else { inView = true; playV(vids[0]); }
+
+
+/* carrusel de diseños */
+(function(){
+  var st = document.getElementById("deckStage"), cards = st.querySelectorAll(".deck-card"), dots = document.querySelectorAll("#deckDots i"), n = cards.length, cur = 0, timer = null, hovering = false;
+  var small = function(){ return window.innerWidth < 700; };
+  function layout(){
+    cards.forEach(function(c, i){
+      var o = ((i - cur) % n + n) % n; if (o > n / 2) o -= n;
+      var x = small() ? 22 : 28, tf;
+      if (o === 0) tf = "translate(-50%,-50%) translateZ(60px) rotateY(var(--ry,0deg)) rotateX(var(--rx,0deg))";
+      else tf = "translate(-50%,-50%) translateX(" + (o * x) + "%) translateZ(-180px) rotateY(" + (-o * 32) + "deg) scale(.86)";
+      c.style.transform = tf; c.style.zIndex = o === 0 ? 3 : 1; c.style.filter = o === 0 ? "none" : "saturate(.75) brightness(.92)";
+      c.classList.toggle("front", o === 0); c.setAttribute("aria-hidden", o === 0 ? "false" : "true");
+    });
+    dots.forEach(function(d, i){ d.classList.toggle("on", i === cur); });
+  }
+  function go(d){ cur = (cur + d + n) % n; layout(); restart(); }
+  function restart(){ clearInterval(timer); if (!reduce) timer = setInterval(function(){ if (!hovering && !document.hidden) { cur = (cur + 1) % n; layout(); } }, 4800); }
+  document.getElementById("deckPrev").addEventListener("click", function(){ go(-1); });
+  document.getElementById("deckNext").addEventListener("click", function(){ go(1); });
+  cards.forEach(function(c, i){ c.addEventListener("click", function(){ if (i !== cur) { cur = i; layout(); restart(); } }); });
+  st.addEventListener("pointerenter", function(){ hovering = true; });
+  st.addEventListener("pointerleave", function(){ hovering = false; var f = cards[cur]; f.style.setProperty("--rx","0deg"); f.style.setProperty("--ry","0deg"); f.style.setProperty("--shine","0"); });
+  if (window.matchMedia && matchMedia("(pointer:fine)").matches && !reduce) st.addEventListener("pointermove", function(e){
+    var r = st.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5, f = cards[cur];
+    f.style.setProperty("--ry", (x * 14).toFixed(2) + "deg"); f.style.setProperty("--rx", (-y * 10).toFixed(2) + "deg"); f.style.setProperty("--shine", "1");
+  });
+  var sx = null;
+  st.addEventListener("pointerdown", function(e){ sx = e.clientX; });
+  st.addEventListener("pointerup", function(e){ if (sx === null) return; var dx = e.clientX - sx; sx = null; if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1); });
+  window.addEventListener("resize", layout);
+  layout(); restart();
+})();
+
+/* balanza 3D: oro pulido y azul marino del logo */
+function initScale(stage, reduce){
+  if (!window.THREE) return false;
+  var renderer;
+  try { renderer = new THREE.WebGLRenderer({ antialias:true, alpha:true, powerPreference:"high-performance", preserveDrawingBuffer:false }); } catch (err) { return false; }
+  if (!renderer.getContext()) return false;
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.outputEncoding = THREE.sRGBEncoding;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.15;
+  renderer.physicallyCorrectLights = true;
+  renderer.domElement.className = "scale-canvas";
+  stage.insertBefore(renderer.domElement, stage.firstChild);
+
+  var scene = new THREE.Scene();
+  var camera = new THREE.PerspectiveCamera(28, 1, .1, 100);
+  camera.position.set(0, 1.0, 17); camera.lookAt(0, -.15, 0);
+
+  /* estudio fotográfico para los reflejos: cajas de luz y franjas oscuras */
+  var pmrem = new THREE.PMREMGenerator(renderer);
+  var env = new THREE.Scene();
+  var room = new THREE.Mesh(new THREE.SphereGeometry(20, 32, 16), new THREE.MeshBasicMaterial({ color:0x3a2a18, side:THREE.BackSide }));
+  env.add(room);
+  function box(color, x, y, z, w, h){ var m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ color:color, side:THREE.DoubleSide })); m.position.set(x, y, z); m.lookAt(0, 0, 0); env.add(m); }
+  box(0xffffff, 0, 9, 3, 10, 5);        // luz cenital
+  box(0xfff1d8, -9, 2, 4, 3, 10);       // tira cálida izquierda
+  box(0xffffff, 9, 1, 3, 3, 10);        // tira blanca derecha
+  box(0x120c06, 0, -1.5, 10, 16, 3.5);  // franja oscura al frente (contraste)
+  box(0xd9b98a, 0, -8, 0, 12, 12);      // rebote del piso
+  scene.environment = pmrem.fromScene(env, .02).texture;
+
+  var gold = new THREE.MeshStandardMaterial({ color:0xE0A84F, metalness:1, roughness:.14 });
+  var goldSoft = new THREE.MeshStandardMaterial({ color:0xC9913F, metalness:1, roughness:.3 });
+  var goldIn = new THREE.MeshStandardMaterial({ color:0xE0A84F, metalness:1, roughness:.18, side:THREE.DoubleSide });
+  var navy = new THREE.MeshPhysicalMaterial({ color:0x020b1f, metalness:0, roughness:.35, clearcoat:.8, clearcoatRoughness:.12, envMapIntensity:.6 });
+
+  var key = new THREE.DirectionalLight(0xffffff, 2.2); key.position.set(5, 8, 7); scene.add(key);
+  var rim = new THREE.DirectionalLight(0xffe2b0, 1.6); rim.position.set(-6, 3, -5); scene.add(rim);
+  scene.add(new THREE.HemisphereLight(0xfff8ee, 0x2a2018, .6));
+
+  var root = new THREE.Group(); scene.add(root);
+  var Y0 = -2.75;
+
+  /* pedestal escalonado marino con filos de oro */
+  function cyl(rt, rb, h, y, mat, seg){ var m = new THREE.Mesh(new THREE.CylinderGeometry(rt, rb, h, seg || 96), mat); m.position.y = y; root.add(m); return m; }
+  function ring(r, t, y, mat){ var m = new THREE.Mesh(new THREE.TorusGeometry(r, t, 16, 120), mat); m.rotation.x = Math.PI / 2; m.position.y = y; root.add(m); return m; }
+  cyl(1.85, 1.95, .28, Y0, navy); ring(1.9, .035, Y0 + .14, gold);
+  cyl(1.45, 1.6, .26, Y0 + .27, navy); ring(1.52, .03, Y0 + .4, gold);
+  cyl(.95, 1.12, .22, Y0 + .51, gold);
+
+  /* columna torneada (balaustre) */
+  var prof = [[0,0],[.62,0],[.62,.06],[.42,.14],[.3,.3],[.22,.55],[.2,.9],[.26,1.05],[.2,1.2],[.15,1.4],[.14,2.6],[.2,2.75],[.15,2.9],[.12,3.0],[.12,3.9],[.2,4.0],[.24,4.12],[.14,4.25],[0,4.3]];
+  var col = new THREE.Mesh(new THREE.LatheGeometry(prof.map(function(p){ return new THREE.Vector2(p[0], p[1]); }), 96), gold);
+  col.position.y = Y0 + .62; root.add(col);
+  var topY = Y0 + .62 + 4.3;
+
+  /* remate: esfera marina y punta de oro */
+  var orb = new THREE.Mesh(new THREE.SphereGeometry(.24, 48, 48), navy); orb.position.y = topY + .2; root.add(orb);
+  var tip = new THREE.Mesh(new THREE.ConeGeometry(.07, .34, 32), gold); tip.position.y = topY + .58; root.add(tip);
+
+  /* brazo curvo */
+  var beam = new THREE.Group(); beam.position.y = topY - .32; root.add(beam);
+  var L = 2.35;
+  var curve = new THREE.CatmullRomCurve3([
+    new THREE.Vector3(-L, -.18, 0), new THREE.Vector3(-L * .55, .06, 0), new THREE.Vector3(0, .14, 0),
+    new THREE.Vector3(L * .55, .06, 0), new THREE.Vector3(L, -.18, 0)
+  ]);
+  beam.add(new THREE.Mesh(new THREE.TubeGeometry(curve, 120, .065, 24, false), gold));
+  var hub = new THREE.Mesh(new THREE.SphereGeometry(.2, 48, 48), goldSoft); hub.position.y = .1; beam.add(hub);
+  var hubRing = new THREE.Mesh(new THREE.TorusGeometry(.2, .03, 12, 64), gold); hubRing.position.y = .1; beam.add(hubRing);
+
+  /* platillos con cadenas de eslabones */
+  var linkGeo = new THREE.TorusGeometry(.045, .012, 8, 20); linkGeo.scale(1, 1.7, 1);
+  var bowlPts = []; for (var i = 0; i <= 24; i++) { var a = i / 24 * Math.PI / 2; bowlPts.push(new THREE.Vector2(Math.sin(a) * 1.0, (1 - Math.cos(a)) * .34)); }
+  var bowlGeo = new THREE.LatheGeometry(bowlPts, 96);
+  var drop = 2.0, hangs = [];
+  [-1, 1].forEach(function(s){
+    var x = s * L, y = -.18;
+    var end = new THREE.Mesh(new THREE.SphereGeometry(.09, 32, 32), goldSoft); end.position.set(x, y, 0); beam.add(end);
+    var hang = new THREE.Group(); hang.position.set(x, y - .08, 0); beam.add(hang);
+    var hook = new THREE.Mesh(new THREE.TorusGeometry(.07, .016, 10, 32), gold); hook.position.y = -.02; hang.add(hook);
+    for (var c = 0; c < 3; c++) {
+      var ang = c / 3 * Math.PI * 2 + Math.PI / 6, bx = Math.cos(ang) * .9, bz = Math.sin(ang) * .9;
+      var dir = new THREE.Vector3(bx, -drop, bz), len = dir.length(); dir.normalize();
+      var n = Math.round(len / .13);
+      var q = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir.clone().negate());
+      for (var k = 0; k < n; k++) {
+        var lk = new THREE.Mesh(linkGeo, goldSoft);
+        lk.position.copy(dir).multiplyScalar((k + .5) * len / n).add(new THREE.Vector3(0, -.08, 0));
+        lk.quaternion.copy(q);
+        if (k % 2) lk.rotateY(Math.PI / 2);
+        hang.add(lk);
+      }
+    }
+    var pan = new THREE.Mesh(bowlGeo, goldIn); pan.position.y = -drop - .42; hang.add(pan);
+    var lip = new THREE.Mesh(new THREE.TorusGeometry(1.0, .028, 12, 120), gold); lip.rotation.x = Math.PI / 2; lip.position.y = -drop - .08; hang.add(lip);
+    hangs.push(hang);
+  });
+
+  /* polvo dorado muy sutil */
+  var N = window.innerWidth < 700 ? 90 : 160, pos = new Float32Array(N * 3), seeds = [];
+  for (var p = 0; p < N; p++) { var rr = 2.4 + Math.random() * 3, t0 = Math.random() * Math.PI * 2; pos[p*3] = Math.cos(t0) * rr; pos[p*3+1] = (Math.random() - .5) * 7; pos[p*3+2] = Math.sin(t0) * rr - 1.5; seeds.push(Math.random() * 10); }
+  var pg = new THREE.BufferGeometry(); pg.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  var dust = new THREE.Points(pg, new THREE.PointsMaterial({ color:0xC99D5E, size:.03, transparent:true, opacity:.55, depthWrite:false }));
+  scene.add(dust);
+
+  function size(){ var w = stage.clientWidth, h = stage.clientHeight; if (!w || !h) return; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); }
+  window.addEventListener("resize", size); size();
+
+  var mx = 0, my = 0, tx = 0, ty = 0;
+  window.addEventListener("pointermove", function(e){ tx = (e.clientX / window.innerWidth - .5) * 2; ty = (e.clientY / window.innerHeight - .5) * 2; }, { passive:true });
+  window.addEventListener("deviceorientation", function(e){ if (e.gamma != null) { tx = Math.max(-1, Math.min(1, e.gamma / 30)); ty = Math.max(-1, Math.min(1, (e.beta - 45) / 40)); } }, { passive:true });
+
+  var clock = new THREE.Clock(), visible = true, running = false;
+  function render(){
+    var t = clock.getElapsedTime();
+    mx += (tx - mx) * .05; my += (ty - my) * .05;
+    var tilt = reduce ? .07 : Math.sin(t * .8) * .08 + mx * .1;
+    beam.rotation.z = tilt; hangs.forEach(function(h){ h.rotation.z = -tilt; });
+    root.rotation.y = (reduce ? -.5 : -.5 + Math.sin(t * .25) * .55) + mx * .35;
+    root.rotation.x = my * .06;
+    root.position.y = reduce ? 0 : Math.sin(t * .9) * .06;
+    dust.rotation.y = t * .03;
+    var arr = pg.attributes.position.array;
+    for (var p = 0; p < N; p++) { arr[p*3+1] += .003 + Math.sin(t + seeds[p]) * .001; if (arr[p*3+1] > 3.5) arr[p*3+1] = -3.5; }
+    pg.attributes.position.needsUpdate = true;
+    renderer.render(scene, camera);
+  }
+  function loop(){
+    if (running) return; running = true;
+    (function tick(){ if (!visible || reduce) { running = false; render(); return; } render(); requestAnimationFrame(tick); })();
+  }
+  if ("IntersectionObserver" in window) new IntersectionObserver(function(en){ visible = en[0].isIntersecting; if (visible) loop(); }).observe(stage);
+  loop();
+  window.__scaleRender = render;
+  return true;
+}
+
+if (initScale(document.getElementById("stage"), reduce)) document.getElementById("fallback").hidden = true;
+})();
+</script>
+</body>
+</html>
