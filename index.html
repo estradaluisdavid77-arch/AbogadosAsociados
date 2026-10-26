@@ -105,13 +105,13 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .fb-link:hover{text-decoration:underline}
 
 /* balanza 3D */
-.scale-stage{position:relative;aspect-ratio:1/1.05;width:100%;max-width:560px;justify-self:center}
+.scale-stage{position:relative;aspect-ratio:1/.94;width:100%;max-width:560px;justify-self:center}
 .scale-stage canvas{position:relative;z-index:1;width:100%!important;height:100%!important;display:block}
-.scale-stage::before{content:"";position:absolute;left:22%;right:22%;bottom:9%;height:7%;border-radius:50%;background:radial-gradient(closest-side,rgba(23,19,15,.32),transparent);filter:blur(6px)}
+.scale-stage::before{display:none;content:"";position:absolute;left:22%;right:22%;bottom:9%;height:7%;border-radius:50%;background:radial-gradient(closest-side,rgba(23,19,15,.32),transparent);filter:blur(6px)}
 .scale-stage .disc{position:absolute;left:8%;right:8%;top:6%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 38%,#16346A 0%,#0B2347 45%,#061633 100%);box-shadow:0 40px 80px rgba(6,22,51,.28),inset 0 0 0 1px rgba(211,176,122,.5),inset 0 0 0 10px rgba(6,22,51,.6),inset 0 0 0 11px rgba(211,176,122,.35)}
 .scale-stage .disc::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 50% 30%,rgba(255,226,170,.28),transparent 55%)}
 .scale-stage .ring{position:absolute;left:8%;right:8%;top:6%;aspect-ratio:1;z-index:0;animation:spin 60s linear infinite}
-.scale-stage .ring text{font-family:var(--f-mono);font-size:3.1px;letter-spacing:.2em;fill:#D3B07A}
+.scale-stage .ring text{font-family:var(--f-mono);font-size:4.3px;font-weight:500;letter-spacing:.1em;fill:#EBCF98}
 .scale-stage .fallback{position:absolute;left:15%;top:28%;width:70%;height:auto;z-index:1}
 @media (max-width:700px){.scale-stage{aspect-ratio:1/.94;max-width:420px}}
 .scale-tag{position:absolute;left:0;bottom:2%;z-index:2;font-family:var(--f-mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
@@ -335,7 +335,7 @@ footer a{color:var(--brass-hi)}
     <div class="scale-stage rise" id="stage" aria-hidden="true">
       <img class="fallback" id="fallback" src="media/emblema-color.png" alt="" width="451" height="326">
       <div class="disc"></div>
-      <svg class="ring" viewBox="0 0 100 100"><defs><path id="ringPath" d="M50,50 m-44.5,0 a44.5,44.5 0 1,1 89,0 a44.5,44.5 0 1,1 -89,0"/></defs><text><textPath href="#ringPath" textLength="278" lengthAdjust="spacing">JUSTICIA · VERDAD · EQUIDAD · JUSTICIA · VERDAD · EQUIDAD · JUSTICIA · VERDAD · EQUIDAD · </textPath></text></svg>
+      <svg class="ring" viewBox="0 0 100 100"><defs><path id="ringPath" d="M50,50 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"/></defs><text><textPath href="#ringPath" textLength="268" lengthAdjust="spacing">JUSTICIA  ·  VERDAD  ·  EQUIDAD  ·  JUSTICIA  ·  VERDAD  ·  EQUIDAD  ·  </textPath></text></svg>
     </div>
   </div>
 </section>
@@ -581,7 +581,7 @@ function initScale(stage, reduce){
 
   var scene = new THREE.Scene();
   var camera = new THREE.PerspectiveCamera(28, 1, .1, 100);
-  camera.position.set(0, 1.0, 17); camera.lookAt(0, -.15, 0);
+  camera.position.set(0, .8, 23.5); camera.lookAt(0, .35, 0);
 
   /* estudio fotográfico para los reflejos: cajas de luz y franjas oscuras */
   var pmrem = new THREE.PMREMGenerator(renderer);
